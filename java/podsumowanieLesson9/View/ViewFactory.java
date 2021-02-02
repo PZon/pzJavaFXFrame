@@ -3,12 +3,11 @@ package podsumowanieLesson9.View;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import podsumowanieLesson9.Ctrl.BaseCtrl;
 import podsumowanieLesson9.Ctrl.OptionCtrl;
-import podsumowanieLesson9.Ctrl.PodsumowanieL9Ctrl;
-import podsumowanieLesson9.Ctrl.TmplApplicationCtrl;
+import podsumowanieLesson9.Ctrl.MainWindowCtrl;
+import podsumowanieLesson9.Ctrl.ApplicationCtrl;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -23,12 +22,12 @@ public class ViewFactory {
     }
 
     public void showStartWindow(){
-        BaseCtrl baseCtrl = new PodsumowanieL9Ctrl(this,"/fxml/podsumowanieL9/TemplatePodsumowanieL9.fxml");
+        BaseCtrl baseCtrl = new MainWindowCtrl(this,"/fxml/podsumowanieL9/mainWindowTmpl.fxml");
         initializeStage(baseCtrl);
     }
 
     public void showAppWindow(){
-        BaseCtrl baseCtrl = new TmplApplicationCtrl(this,"/fxml/podsumowanieL9/tmplApplication.fxml");
+        BaseCtrl baseCtrl = new ApplicationCtrl(this,"/fxml/podsumowanieL9/tmplApplication.fxml");
         initializeStage(baseCtrl);
     }
 

@@ -14,7 +14,7 @@ import podsumowanieLesson9.View.ViewFactory;
 /**
  * Created by PZON_SM on 29.01.2021.
  **/
-public class PodsumowanieL9Ctrl extends BaseCtrl {
+public class MainWindowCtrl extends BaseCtrl {
 
     @FXML
     private AnchorPane mainWindow;
@@ -31,7 +31,7 @@ public class PodsumowanieL9Ctrl extends BaseCtrl {
     @FXML
     private Label error;
 
-    public PodsumowanieL9Ctrl(ViewFactory viewFactory, String fxmlFile) {
+    public MainWindowCtrl(ViewFactory viewFactory, String fxmlFile) {
         super(viewFactory, fxmlFile);
     }
 

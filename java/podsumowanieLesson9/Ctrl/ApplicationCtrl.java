@@ -15,11 +15,11 @@ import java.io.IOException;
 /**
  * Created by PZON_SM on 29.01.2021.
  **/
-public class TmplApplicationCtrl extends BaseCtrl {
+public class ApplicationCtrl extends BaseCtrl {
     @FXML
     private Button applicationButton;
 
-    public TmplApplicationCtrl(ViewFactory viewFactory, String fxmlFile) {
+    public ApplicationCtrl(ViewFactory viewFactory, String fxmlFile) {
         super(viewFactory,fxmlFile);
     }
 
